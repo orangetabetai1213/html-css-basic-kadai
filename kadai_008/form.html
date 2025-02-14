@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+  <body>
+    <!--formタグでテキストボックスやチェックボックスなどを作ることができる-->
+    
+    <form>
+      <label>氏名</label>
+      <!-- labelタグで項目名を付けることができる -->
+      <input type="text" placeholder="名前を入力してください">
+      <!--inputでフォームを追加、typeで属性を決定、placeholderで何を入力するのか薄文字で表記できる-->
+
+      <br>
+      
+      <label>年代</label>
+      <!-- selectタグでプルダウンで複数の選択肢から１つ選ぶことができる、optionタグで選択肢を作れる -->
+      <select>
+        <option>１０代以下</option>
+        <option>２０代</option>
+        <option>３０代</option>
+        <option>４０代以上</option>
+      </select>
+      <br>
+
+      <label>お問い合わせ内容</label>
+      <!-- textareaで長めの文章を入力できるテキストボックスを作れる -->
+      <textarea></textarea>
+      <br>
+
+      <!-- inputタグでtype属性にradioを指定するとラジオボタン(丸いボタンの選択)を作成できる -->
+      <!-- 選択肢が少ない性別などでよく使われる -->
+      <!-- name属性で要素に名前を付けることができる。ラジオボタンの選択肢は名前を統一する -->
+      <label>男性</label><input type="radio" name="gender">
+      <label>女性</label><input type="radio" name="gender">
+      <label>その他</label><input type="radio" name="gender">
+      <br>
+
+      <label>利用規約に同意する</label>
+      <!-- inputでtype属性をcheckboxにするとチェックボックスを表示できる -->
+      <input type="checkbox">
+      <br>
+
+      <!-- inputでtype属性をsubmitに指定すると送信ボタンを作れる、valueで送信ボタンの字を任意に設定できる -->
+      <input type="submit" value="送信" >
+      
+      <!-- inputでtype属性をresetにするとリセットボタンを作れる -->
+      <input type="reset" value="リセット">
+      <br>
+    </form>
+
+  </body>
+
+</html>
